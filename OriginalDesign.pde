@@ -1,3 +1,4 @@
+int cloudsX = 338;
 void setup()
 {
   size(500,500);
@@ -9,6 +10,7 @@ void draw()
   mountain();
   land();
   clouds();
+  cloudsX = cloudsX + 1;
 }
 void mountain()
 {
@@ -49,6 +51,6 @@ void clouds()
 {
 	fill(255,255,255,240);
     noStroke();
-    ellipse(338,121,81,49);
-    ellipse(281,138,81,49);
+    ellipse(cloudsX,121,81,49);
+    ellipse(cloudsX-57,138,81,49);
 }
