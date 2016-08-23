@@ -1,6 +1,6 @@
 int cloudsX = 338;
-int sunX = 100;
-int sunY = 90;
+int sunX = -50;
+int sunY = 250;
 void setup()
 {
   size(500,500);
@@ -12,7 +12,18 @@ void draw()
   mountain();
   land();
   clouds();
-  //if (sunX)
+  if (sunX < 550)
+  {
+  	sunX = sunX + 2;
+  }
+  if (sunY < 60)
+  {
+  	sunY = sunY + 1;
+  }
+  if (sunY > 50)
+  {
+  	sunY = sunY - 2;
+  }
   if (cloudsX > 600)
   {
   	cloudsX = -100; 
