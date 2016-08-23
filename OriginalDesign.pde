@@ -1,4 +1,6 @@
 int cloudsX = 338;
+int sunX = 100;
+int sunY = 90;
 void setup()
 {
   size(500,500);
@@ -10,6 +12,10 @@ void draw()
   mountain();
   land();
   clouds();
+  if (cloudsX > 600)
+  {
+  	cloudsX = -100; 
+  }
   cloudsX = cloudsX + 1;
 }
 void mountain()
@@ -30,7 +36,7 @@ void sun()
 {
 	noStroke();
 	fill(255,255,0);
-	ellipse(100,90,60,60);
+	ellipse(sunX,sunY,70,70);
 }
 void land()
 {
@@ -49,7 +55,7 @@ void land()
 }
 void clouds()
 {
-	fill(255,255,255,240);
+	fill(255,255,255,220);
     noStroke();
     ellipse(cloudsX,121,81,49);
     ellipse(cloudsX-57,138,81,49);
