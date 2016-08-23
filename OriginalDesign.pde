@@ -12,6 +12,7 @@ void draw()
   mountain();
   land();
   clouds();
+  //if (sunX)
   if (cloudsX > 600)
   {
   	cloudsX = -100; 
