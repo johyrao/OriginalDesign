@@ -58,11 +58,11 @@ void clouds()
 {
 	fill(255,255,255,220);
   noStroke();
-  ellipse(cloudsX,121,81,49);
-  ellipse(cloudsX-57,138,81,49);
+  ellipse(cloudsX,121,111,79);
+  ellipse(cloudsX-70,150,111,79);
   if (cloudsX > 600)
   {
-  	cloudsX = -100; 
+    cloudsX = -60;
   }
   cloudsX = cloudsX + 1;
 }
