@@ -29,11 +29,11 @@ void mountain()
 }
 void sun()
 {
-	noStroke();
+  noStroke();
   fill(255,255,0);
   ellipse(sunX,sunY,70,70);
   sunX = sunX + 1;
-  sunY = ((1.0/300)*(sunX - 250)*(sunX - 250) + 70);
+  sunY = (int)((1.0/300)*(sunX - 250)*(sunX - 250) + 70);
   if (sunX > 600) 
   {
     sunX = -75;
